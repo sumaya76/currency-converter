@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/coin.png" alt="Currency Icon" class="icon">
+        <h1>Currency Converter</h1>
+        <div class="converter">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" aria-label="Amount" />
+    
+            <label for="fromCurrency">From:</label>
+            <select id="fromCurrency" aria-label="Select currency to convert from">
+                <option value="" disabled selected>Select currency</option>
+                <!-- Currency options will be populated here -->
+            </select>
+    
+            <label for="toCurrency">To:</label>
+            <select id="toCurrency" aria-label="Select currency to convert to">
+                <option value="" disabled selected>Select currency</option>
+                <!-- Currency options will be populated here -->
+            </select>
+    
+            <button id="convertBtn" aria-label="Convert currencies">Convert</button>
+        </div>
+        <h2 id="result"></h2>
+        <p id="error" style="color: red;"></p> <!-- Error message display -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
